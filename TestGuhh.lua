@@ -1,4 +1,4 @@
--- Tüüo ScreenGui vüü cüüc thüünh phüün
+-- TÃ¼Ã¼o ScreenGui vÃ¼Ã¼ cÃ¼Ã¼c thÃ¼Ã¼nh phÃ¼Ã¼n
 local screenGui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local imageButton = Instance.new("ImageButton")
@@ -80,106 +80,106 @@ enableDrag(imageButton)
 enableDrag(frame)
 
 
--- Tüüo Frame chüüa checkbox vüü thanh ngang
+-- TÃ¼Ã¼o Frame chÃ¼Ã¼a checkbox vÃ¼Ã¼ thanh ngang
 local checkBoxContainer = Instance.new("Frame")
-checkBoxContainer.Parent = frame -- Küüt nüüi vüüi Frame chüünh cüüa GUI
-checkBoxContainer.Size = UDim2.new(1, 0, 0.2, 0) -- Chiüüm 100% chiüüu rüüng vüü 20% chiüüu cao cüüa Frame
-checkBoxContainer.Position = UDim2.new(0, 0, 0.6, 0) -- Cüüch trüün 60% cüüa Frame
-checkBoxContainer.BackgroundTransparency = 1 -- Khüüng cüü nüün
+checkBoxContainer.Parent = frame -- KÃ¼Ã¼t nÃ¼Ã¼i vÃ¼Ã¼i Frame chÃ¼Ã¼nh cÃ¼Ã¼a GUI
+checkBoxContainer.Size = UDim2.new(1, 0, 0.2, 0) -- ChiÃ¼Ã¼m 100% chiÃ¼Ã¼u rÃ¼Ã¼ng vÃ¼Ã¼ 20% chiÃ¼Ã¼u cao cÃ¼Ã¼a Frame
+checkBoxContainer.Position = UDim2.new(0, 0, 0.6, 0) -- CÃ¼Ã¼ch trÃ¼Ã¼n 60% cÃ¼Ã¼a Frame
+checkBoxContainer.BackgroundTransparency = 1 -- KhÃ¼Ã¼ng cÃ¼Ã¼ nÃ¼Ã¼n
 
--- Tüüo checkbox büün trüüi
+-- TÃ¼Ã¼o checkbox bÃ¼Ã¼n trÃ¼Ã¼i
 local leftCheckBox = Instance.new("ImageButton")
 leftCheckBox.Parent = checkBoxContainer
-leftCheckBox.Size = UDim2.new(0.1, 0, 1, 0) -- Chiüüm 10% chiüüu rüüng, chiüüu cao büüng Frame
-leftCheckBox.Position = UDim2.new(0.2, 0, 0, 0) -- Cüüch trüüi 20%
-leftCheckBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Müüu nüün
+leftCheckBox.Size = UDim2.new(0.1, 0, 1, 0) -- ChiÃ¼Ã¼m 10% chiÃ¼Ã¼u rÃ¼Ã¼ng, chiÃ¼Ã¼u cao bÃ¼Ã¼ng Frame
+leftCheckBox.Position = UDim2.new(0.2, 0, 0, 0) -- CÃ¼Ã¼ch trÃ¼Ã¼i 20%
+leftCheckBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- MÃ¼Ã¼u nÃ¼Ã¼n
 leftCheckBox.BorderSizePixel = 2
-leftCheckBox.BorderColor3 = Color3.fromRGB(0, 255, 0) -- Müüu viüün
-leftCheckBox.Image = "" -- Khüüng hüünh üünh müüc üüüünh
+leftCheckBox.BorderColor3 = Color3.fromRGB(0, 255, 0) -- MÃ¼Ã¼u viÃ¼Ã¼n
+leftCheckBox.Image = "" -- KhÃ¼Ã¼ng hÃ¼Ã¼nh Ã¼Ã¼nh mÃ¼Ã¼c Ã¼Ã¼Ã¼Ã¼nh
 
--- Tüüo checkbox büün phüüi
+-- TÃ¼Ã¼o checkbox bÃ¼Ã¼n phÃ¼Ã¼i
 local rightCheckBox = Instance.new("ImageButton")
 rightCheckBox.Parent = checkBoxContainer
-rightCheckBox.Size = UDim2.new(0.1, 0, 1, 0) -- Chiüüm 10% chiüüu rüüng, chiüüu cao büüng Frame
-rightCheckBox.Position = UDim2.new(0.7, 0, 0, 0) -- Cüüch trüüi 70%
+rightCheckBox.Size = UDim2.new(0.1, 0, 1, 0) -- ChiÃ¼Ã¼m 10% chiÃ¼Ã¼u rÃ¼Ã¼ng, chiÃ¼Ã¼u cao bÃ¼Ã¼ng Frame
+rightCheckBox.Position = UDim2.new(0.7, 0, 0, 0) -- CÃ¼Ã¼ch trÃ¼Ã¼i 70%
 rightCheckBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 rightCheckBox.BorderSizePixel = 2
 rightCheckBox.BorderColor3 = Color3.fromRGB(0, 255, 0)
 rightCheckBox.Image = ""
 
--- Tüüo thanh ngang üü giüüa
+-- TÃ¼Ã¼o thanh ngang Ã¼Ã¼ giÃ¼Ã¼a
 local middleLine = Instance.new("Frame")
 middleLine.Parent = checkBoxContainer
-middleLine.Size = UDim2.new(0.3, 0, 0.1, 0) -- Chiüüu rüüng 30% vüü chiüüu cao 10%
-middleLine.Position = UDim2.new(0.35, 0, 0.45, 0) -- Nüüm giüüa 2 checkbox
-middleLine.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Müüu xanh
-middleLine.BorderSizePixel = 0 -- Khüüng viüün
+middleLine.Size = UDim2.new(0.3, 0, 0.1, 0) -- ChiÃ¼Ã¼u rÃ¼Ã¼ng 30% vÃ¼Ã¼ chiÃ¼Ã¼u cao 10%
+middleLine.Position = UDim2.new(0.35, 0, 0.45, 0) -- NÃ¼Ã¼m giÃ¼Ã¼a 2 checkbox
+middleLine.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- MÃ¼Ã¼u xanh
+middleLine.BorderSizePixel = 0 -- KhÃ¼Ã¼ng viÃ¼Ã¼n
 
--- Tüüo TextLabel cho trüüng thüüi
+-- TÃ¼Ã¼o TextLabel cho trÃ¼Ã¼ng thÃ¼Ã¼i
 local checkBoxLabel = Instance.new("TextLabel")
 checkBoxLabel.Parent = checkBoxContainer
-checkBoxLabel.Size = UDim2.new(1, 0, 0.3, 0) -- Chiüüu cao 30%
-checkBoxLabel.Position = UDim2.new(0, 0, 1.1, 0) -- Düüüüi container
-checkBoxLabel.BackgroundTransparency = 1 -- Khüüng nüün
-checkBoxLabel.Text = "None selected" -- Nüüi dung müüc üüüünh
-checkBoxLabel.TextColor3 = Color3.fromRGB(0, 255, 0) -- Müüu chüü
+checkBoxLabel.Size = UDim2.new(1, 0, 0.3, 0) -- ChiÃ¼Ã¼u cao 30%
+checkBoxLabel.Position = UDim2.new(0, 0, 1.1, 0) -- DÃ¼Ã¼Ã¼Ã¼i container
+checkBoxLabel.BackgroundTransparency = 1 -- KhÃ¼Ã¼ng nÃ¼Ã¼n
+checkBoxLabel.Text = "None selected" -- NÃ¼Ã¼i dung mÃ¼Ã¼c Ã¼Ã¼Ã¼Ã¼nh
+checkBoxLabel.TextColor3 = Color3.fromRGB(0, 255, 0) -- MÃ¼Ã¼u chÃ¼Ã¼
 checkBoxLabel.TextSize = 18
 checkBoxLabel.Font = Enum.Font.SourceSans
 
--- Süü kiüün checkbox
+-- SÃ¼Ã¼ kiÃ¼Ã¼n checkbox
 local selected = "None"
 leftCheckBox.MouseButton1Click:Connect(function()
     selected = "Left selected"
-    leftCheckBox.Image = "rbxassetid://6031068420" -- Hüünh üünh tüüch
-    rightCheckBox.Image = "" -- Büü tüüch büün phüüi
+    leftCheckBox.Image = "rbxassetid://6031068420" -- HÃ¼Ã¼nh Ã¼Ã¼nh tÃ¼Ã¼ch
+    rightCheckBox.Image = "" -- BÃ¼Ã¼ tÃ¼Ã¼ch bÃ¼Ã¼n phÃ¼Ã¼i
     checkBoxLabel.Text = selected
 end)
 
 rightCheckBox.MouseButton1Click:Connect(function()
     selected = "Right selected"
     rightCheckBox.Image = "rbxassetid://6031068420"
-    leftCheckBox.Image = "" -- Büü tüüch büün trüüi
+    leftCheckBox.Image = "" -- BÃ¼Ã¼ tÃ¼Ã¼ch bÃ¼Ã¼n trÃ¼Ã¼i
     checkBoxLabel.Text = selected
 end)
--- Tüüo Frame chüüa toggle
+-- TÃ¼Ã¼o Frame chÃ¼Ã¼a toggle
 local toggleContainer = Instance.new("Frame")
-toggleContainer.Parent = frame -- Küüt nüüi vüüi Frame chüünh
-toggleContainer.Size = UDim2.new(0.2, 0, 0.05, 0) -- Toggle nhüü güün (20% rüüng, 5% cao cüüa Frame)
-toggleContainer.Position = UDim2.new(0.4, 0, 0.85, 0) -- Nüüm giüüa güün düüüüi Frame
-toggleContainer.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Müüu üüüü (tüüt müüc üüüünh)
+toggleContainer.Parent = frame -- KÃ¼Ã¼t nÃ¼Ã¼i vÃ¼Ã¼i Frame chÃ¼Ã¼nh
+toggleContainer.Size = UDim2.new(0.2, 0, 0.05, 0) -- Toggle nhÃ¼Ã¼ gÃ¼Ã¼n (20% rÃ¼Ã¼ng, 5% cao cÃ¼Ã¼a Frame)
+toggleContainer.Position = UDim2.new(0.4, 0, 0.85, 0) -- NÃ¼Ã¼m giÃ¼Ã¼a gÃ¼Ã¼n dÃ¼Ã¼Ã¼Ã¼i Frame
+toggleContainer.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- MÃ¼Ã¼u Ã¼Ã¼Ã¼Ã¼ (tÃ¼Ã¼t mÃ¼Ã¼c Ã¼Ã¼Ã¼Ã¼nh)
 toggleContainer.BorderSizePixel = 0
 
--- Bo güüc cho toggle
+-- Bo gÃ¼Ã¼c cho toggle
 local toggleCorner = Instance.new("UICorner")
-toggleCorner.CornerRadius = UDim.new(1, 0) -- Bo güüc trüün
+toggleCorner.CornerRadius = UDim.new(1, 0) -- Bo gÃ¼Ã¼c trÃ¼Ã¼n
 toggleCorner.Parent = toggleContainer
 
--- Tüüo nüüt trüün
+-- TÃ¼Ã¼o nÃ¼Ã¼t trÃ¼Ã¼n
 local toggleButton = Instance.new("Frame")
 toggleButton.Parent = toggleContainer
-toggleButton.Size = UDim2.new(0.4, 0, 0.8, 0) -- Nüüt chiüüm 40% rüüng, cao 80% cüüa toggle
-toggleButton.Position = UDim2.new(0, 0, 0.1, 0) -- Vüü trüü büün trüüi (tüüt)
-toggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Müüu trüüng
+toggleButton.Size = UDim2.new(0.4, 0, 0.8, 0) -- NÃ¼Ã¼t chiÃ¼Ã¼m 40% rÃ¼Ã¼ng, cao 80% cÃ¼Ã¼a toggle
+toggleButton.Position = UDim2.new(0, 0, 0.1, 0) -- VÃ¼Ã¼ trÃ¼Ã¼ bÃ¼Ã¼n trÃ¼Ã¼i (tÃ¼Ã¼t)
+toggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- MÃ¼Ã¼u trÃ¼Ã¼ng
 toggleButton.BorderSizePixel = 0
 
--- Bo güüc cho nüüt trüün
+-- Bo gÃ¼Ã¼c cho nÃ¼Ã¼t trÃ¼Ã¼n
 local buttonCorner = Instance.new("UICorner")
-buttonCorner.CornerRadius = UDim.new(1, 0) -- Bo güüc trüün
+buttonCorner.CornerRadius = UDim.new(1, 0) -- Bo gÃ¼Ã¼c trÃ¼Ã¼n
 buttonCorner.Parent = toggleButton
 
--- Trüüng thüüi Toggle
-local isOn = false -- Müüc üüüünh lüü tüüt
+-- TrÃ¼Ã¼ng thÃ¼Ã¼i Toggle
+local isOn = false -- MÃ¼Ã¼c Ã¼Ã¼Ã¼Ã¼nh lÃ¼Ã¼ tÃ¼Ã¼t
 
--- Süü kiüün khi nhüün toggle
+-- SÃ¼Ã¼ kiÃ¼Ã¼n khi nhÃ¼Ã¼n toggle
 toggleContainer.InputBegan:Connect(function(input)
     if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        isOn = not isOn -- Thay üüüüi trüüng thüüi
+        isOn = not isOn -- Thay Ã¼Ã¼Ã¼Ã¼i trÃ¼Ã¼ng thÃ¼Ã¼i
         if isOn then
-            toggleContainer.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Müüu xanh (büüt)
-            toggleButton:TweenPosition(UDim2.new(0.6, 0, 0.1, 0), "Out", "Sine", 0.2, true) -- Nüüt sang phüüi
+            toggleContainer.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- MÃ¼Ã¼u xanh (bÃ¼Ã¼t)
+            toggleButton:TweenPosition(UDim2.new(0.6, 0, 0.1, 0), "Out", "Sine", 0.2, true) -- NÃ¼Ã¼t sang phÃ¼Ã¼i
         else
-            toggleContainer.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Müüu üüüü (tüüt)
-            toggleButton:TweenPosition(UDim2.new(0, 0, 0.1, 0), "Out", "Sine", 0.2, true) -- Nüüt sang trüüi
+            toggleContainer.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- MÃ¼Ã¼u Ã¼Ã¼Ã¼Ã¼ (tÃ¼Ã¼t)
+            toggleButton:TweenPosition(UDim2.new(0, 0, 0.1, 0), "Out", "Sine", 0.2, true) -- NÃ¼Ã¼t sang trÃ¼Ã¼i
         end
     end
 end)
