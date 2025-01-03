@@ -141,45 +141,40 @@ rightCheckBox.MouseButton1Click:Connect(function()
     leftCheckBox.Image = "" -- Büü tüüch büün trüüi
     checkBoxLabel.Text = selected
 end)
--- Tüüo Frame chüüa toggle
-local toggleContainer = Instance.new("Frame")
-toggleContainer.Parent = frame -- Küüt nüüi vüüi Frame chüünh
-toggleContainer.Size = UDim2.new(0.2, 0, 0.05, 0) -- Toggle nhüü güün (20% rüüng, 5% cao cüüa Frame)
-toggleContainer.Position = UDim2.new(0.4, 0, 0.85, 0) -- Nüüm giüüa güün düüüüi Frame
-toggleContainer.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Müüu üüüü (tüüt müüc üüüünh)
-toggleContainer.BorderSizePixel = 0
+-- Hàm tạo nút
+local function CreateButton(properties)
+    local buttonFrame = Instance.new("TextButton")
+    buttonFrame.Name = properties.Name or "Button"
+    buttonFrame.Text = properties.Name or "Button"
+    buttonFrame.Size = UDim2.new(0.8, 0, 0.1, 0) -- Kích thước mặc định
+    buttonFrame.Position = properties.Position or UDim2.new(0.1, 0, 0.1, 0) -- Vị trí mặc định
+    buttonFrame.BackgroundColor3 = Color3.fromRGB(0, 170, 255) -- Màu xanh lam
+    buttonFrame.TextColor3 = Color3.fromRGB(255, 255, 255) -- Màu chữ trắng
+    buttonFrame.Font = Enum.Font.SourceSansBold
+    buttonFrame.TextSize = 18
 
--- Bo güüc cho toggle
-local toggleCorner = Instance.new("UICorner")
-toggleCorner.CornerRadius = UDim.new(1, 0) -- Bo güüc trüün
-toggleCorner.Parent = toggleContainer
+    -- Bo góc nút
+    local uiCorner = Instance.new("UICorner")
+    uiCorner.CornerRadius = UDim.new(0.2, 0) -- Bo góc 20%
+    uiCorner.Parent = buttonFrame
 
--- Tüüo nüüt trüün
-local toggleButton = Instance.new("Frame")
-toggleButton.Parent = toggleContainer
-toggleButton.Size = UDim2.new(0.4, 0, 0.8, 0) -- Nüüt chiüüm 40% rüüng, cao 80% cüüa toggle
-toggleButton.Position = UDim2.new(0, 0, 0.1, 0) -- Vüü trüü büün trüüi (tüüt)
-toggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Müüu trüüng
-toggleButton.BorderSizePixel = 0
-
--- Bo güüc cho nüüt trüün
-local buttonCorner = Instance.new("UICorner")
-buttonCorner.CornerRadius = UDim.new(1, 0) -- Bo güüc trüün
-buttonCorner.Parent = toggleButton
-
--- Trüüng thüüi Toggle
-local isOn = false -- Müüc üüüünh lüü tüüt
-
--- Süü kiüün khi nhüün toggle
-toggleContainer.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        isOn = not isOn -- Thay üüüüi trüüng thüüi
-        if isOn then
-            toggleContainer.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Müüu xanh (büüt)
-            toggleButton:TweenPosition(UDim2.new(0.6, 0, 0.1, 0), "Out", "Sine", 0.2, true) -- Nüüt sang phüüi
-        else
-            toggleContainer.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Müüu üüüü (tüüt)
-            toggleButton:TweenPosition(UDim2.new(0, 0, 0.1, 0), "Out", "Sine", 0.2, true) -- Nüüt sang trüüi
+    -- Sự kiện khi nhấn nút
+    buttonFrame.MouseButton1Click:Connect(function()
+        if properties.Callback then
+            properties.Callback() -- Gọi hàm Callback
         end
+    end)
+
+    return buttonFrame
+end
+
+-- Thêm nút vào GUI đã tạo trước đó
+local button = CreateButton({
+    Name = "Click Me", -- Tên nút
+    Position = UDim2.new(0.1, 0, 0.3, 0), -- Vị trí trong Frame
+    Callback = function() -- Hành động khi nhấn nút
+        print("Button Clicked!")
     end
-end)
+})
+
+button.Parent = frame -- Gắn nút vào Frame trong GUI của bạn
