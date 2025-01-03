@@ -110,7 +110,7 @@ rightCheckBox.Image = ""
 -- Tüüo thanh ngang üü giüüa
 local middleLine = Instance.new("Frame")
 middleLine.Parent = checkBoxContainer
-middleLine.Size = UDim2.new(0.3, 0, 0.1, 0) -- Chiüüu rüüng 30% vüü chiüüu cao 10%
+middleLine.Size = UDim2.new(0.1, 0, 0.3, 0) -- Chiüüu rüüng 30% vüü chiüüu cao 10%
 middleLine.Position = UDim2.new(0.35, 0, 0.45, 0) -- Nüüm giüüa 2 checkbox
 middleLine.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Müüu xanh
 middleLine.BorderSizePixel = 0 -- Khüüng viüün
